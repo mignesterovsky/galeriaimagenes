@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Galeria de Imagenes</title>
+</head>
+<body>
+    <header>
+        <h1>GALERIA DE IMAGENES</h1>
+        <button id= "btnGaleria" onclick="ocultar()"> ver como Galeria</button>
+        <button style="display:none" id= "btnSlider" onclick="mostrar()"> ver como Slider</button>
+    </header>
+    <div id="slider" class="image-slider">
+        <div class="slider-izquierdo">
+           <img  onclick="moverIzq()" decoding="async" src="images/atras.png" alt="">
+        </div>
+
+        <div class="slider-screen">
+           <img class="img" name="Imagen">
+        </div>
+
+        <div class="slider-derecho">
+            <img onclick="moverDer()" decoding="async" src="images/adelante.png" alt="">
+        </div>
+    </div>
+    <div class="galeria" id="galeria">
+
+        <div class="galeria-screen">
+            <img class="foto" src="images/imagen1.jpg">
+            <img class="foto"  src="images/imagen2.jpg" >
+            <img class="foto"  src="images/imagen3.jpg">
+            <img class="foto"  src="images/imagen4.jpg" >
+         </div>
+
+    </div>
+
+   
+<script src="script.js"></script>
+</body>
+</html>
